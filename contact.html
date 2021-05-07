@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Mon tout premier portfolio">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <title>Mon portfolio</title>
+    </head>
+    <body>
+        <!-- section d'en-tête -->
+        <header>
+            <!-- section navigation -->
+            <div class="banner_top"><!-- div vide pour bannière --></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="travaux.html">Travaux</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="competences.html">Compétences</a></li>
+                        <li><a href="experiences.html">Expériences</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            <!-- section navigation -->
+            </header>
+    <!-- section d'en-tête -->
+        <main>
+            <h1>Mon portfolio</h1>
+            <section>
+                <h2>Travaillons ensemble</h2>
+                <article>
+                    <h3>Formulaire de contact</h3>
+                    <form action="ploufplouf" method="POST">
+                        <div>
+                            <label for="prenom">Entrer votre prénom : </label>
+                            <input type="text" name="prenom" id="prenom" placeholder="Jean-Philomène">
+                        </div>
+                        <div>
+                            <label for="nom">Entrer votre nom : </label>
+                            <input type="text" name="nom" id="nom" placeholder="Vladskanov">
+                        </div>
+                        <div>
+                            <label for="email">Entrer votre e-mail : </label>
+                            <input type="email" name="mail" id="mail" placeholder="exemple@mail.com">
+                        </div>
+                        <div>
+                            <label for="rdv">Pour quel service souhaitez-vous des informations ?</label>
+                            <br>
+                            <select name="selectServices" id="selectServices">
+                            <!-- CONTACT -->
+                                <optgroup label="Contact">
+                                    <option value="contact">Des questions ?</option>
+                                </optgroup>
+                            <!-- WEBDESIGN SERVICES -->
+                                <optgroup label="Web Design">
+                                    <option value="htmlcss">HTML / CSS</option>
+                                    <option value="javascript">JavaScript</option>
+                                    <option value="material">Material</option>
+                                    <option value="bootstrap">Bootstrap</option>
+                                </optgroup>
+                            <!-- FRONT-END SERVICES -->
+                                <optgroup label="Front-End">
+                                    <option value="angular">Angular</option>
+                                    <option value="typescript">TypeScript</option>
+                                </optgroup>
+                            <!-- BACK-END SERVICES -->
+                                <optgroup label="Back-End">
+                                    <option value="php">PHP</option>
+                                    <option value="nodejs">Node.js</option>
+                                    <option value="python">Python</option>
+                                    <option value="git">Git</option>
+                                </optgroup>
+                            <!-- DATABASE SERVICES -->
+                                <optgroup label="Database">
+                                    <option value="sql_mysql">SQL / MySQL</option>
+                                    <option value="sqlserver">SQL Server</option>
+                                    <option value="nosql_mongodb">NoSQL / MonoDB</option>
+                                </optgroup>
+                            <!-- BUSINESS INTELLIGENCE SERVICES -->
+                                <optgroup label="Business Intelligence">
+                                    <option value="powerbi">Power BI</option>
+                                    <option value="etl_avec_ssis">ETL avec SSIS</option>
+                                </optgroup>
+                            <!-- HARDWARE SERVICES -->
+                                <optgroup label="Hardware">
+                                    <option value="reparation_pc_tour">Réparation PC tour</option>
+                                    <option value="montage_pc_tour">Montage PC tour</option>
+                                </optgroup>
+                            <!-- HARDWARE SERVICES -->
+                                <optgroup label="Photographie">
+                                    <option value="reparation_pc_tour">Réparation PC tour</option>
+                                    <option value="montage_pc_tour">Montage PC tour</option>
+                                </optgroup>
+                            <!-- PHOTOGRAPHIE SERVICES -->
+                                <optgroup label="Graphisme">
+                                    <option value="retouche_photo_image">Retouche photo/imager</option>
+                                    <option value="detourage">Détourage</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="msg">Entrez votre message ici</label>
+                            </div>
+                            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Votre message..."></textarea>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="checkbox" id="checkbox" checked>
+                            <label for="checkbox">Je m'inscris à la newsletter</label>
+                        </div>
+                        <div>
+                            <label for="fichier">Votre coupon de réduction (.pdf uniquement) : </label>
+                            <input class="retour_ligne" type="file" id="fichier" name="fichier" accept=".pdf">  
+                        </div>
+                        <div class="center_form_button">
+                            <input type="submit" value="Envoyer" class="form_button envoyer">
+                            <input type="reset" value="Annuler" class="form_button reset">
+                        </div>
+                    </form>
+                    <p class="mail_contact_p">Pour tous contact ayant plus d'un fichier à partager, n'hésitez pas à me contacter directement à cette adresse</p>
+                    <div>
+                        <p class="mail_contact">contact@deborahclerckx.com</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <h3>Informations</h3>
+            <p><strong>Portfolio</strong> <strong>Déborah Clerckx</strong> &copy;2021</p>
+        </footer>
+    </body>
+</html>

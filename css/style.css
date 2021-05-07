@@ -1,0 +1,325 @@
+/* ____________________________________________ */
+/*                                              */
+/*           CSS PAR DEBORAH CLERCKX            */
+/* ____________________________________________ */
+/*                                              */
+/*       Mise en place des styles GENERAUX      */
+/* ____________________________________________ */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+@media screen and (min-width:780px){ /* max-width:780px = relatif au commentaire ci bas*/
+    .gallery .figure{
+        width: 48%;
+    }
+    .flexing{
+        display: flex;
+    }
+    .gallery{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .photoDC{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
+html{
+    font-family: 'Montserrat', Arial, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(37, 37, 37);
+    color: rgb(228, 228, 228);
+    font-size: 1em;
+    line-height: 1.30;
+}
+
+.gras{
+    font-weight: 600;
+    color: rgb(186, 209, 122);
+}
+.souligne{
+    text-decoration: underline;
+}
+
+
+/* ____________________________________________ */
+/*                                              */
+/*          Mise en place de l'EN-TÊTE          */
+/* ____________________________________________ */
+
+header{
+    background-color: rgb(165, 203, 77);
+}
+.banner_top{
+    height: 25vh;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center; 
+}
+
+
+/* ____________________________________________ */
+/*                                              */
+/*       Mise en place de la NAVIGATION         */
+/* ____________________________________________ */
+
+header nav ul{
+    text-align: center;
+}
+header nav li{
+    margin: 16.5px 0;
+    list-style: none;
+    display: inline-block;
+}
+header nav li a{
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 17px;
+    text-decoration: none;
+}
+/* Etat normal du lien */
+header nav li a{
+    color: #333;
+}
+/* Etat survolé du lien */
+header nav li a:hover{
+    color: rgb(186, 247, 54);
+    background-color: rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+
+/* ____________________________________________ */
+/*                                              */
+/*             Mise en place du MAIN            */
+/* ____________________________________________ */
+
+main{
+    margin: 10px;
+    padding: 24px 18px;
+    width: 80vw; /* responsive car largeur de la fenêtre */
+    margin: 0 auto; /* Centre et rend le contenu responsive */
+    background-color: rgb(46, 49, 42);
+}
+/*    Les différents "titres"    */
+h1{
+    text-align: center;
+    color: #fff;
+    margin: 0 0 35px 0;
+    text-transform: uppercase;
+}
+main h2{
+    background-color: rgb(133, 139, 132);
+    color: #333;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    margin: 0 0 25px 0;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 0 rgba(165, 203, 77, .2);
+}
+main h3{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-size: 1.3em;
+    background-color: rgb(173, 177, 167);
+    color: #333;
+    max-width: 65%;
+    margin: 20px auto;
+    box-shadow: 5px 5px 0 rgba(165, 203, 77, .2);
+}
+main h4{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+}
+/* Les différents "paragraphes" généraux */
+main .p_justify{
+    text-align: left;
+    margin: 15px 0 15px 0;
+    letter-spacing: 0.3px;
+}
+p{
+    margin-bottom: 5px;
+}
+/* PHOTO ACCUEIL */
+.photoDC{
+    width: 40%;
+    border: 2px solid rgb(165, 203, 77);
+    box-shadow: 12px 12px 2px 1px rgba(165, 203, 77, .2);
+    border-radius: 64% 36% 66% 34% / 45% 50% 50% 55%;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position:top; 
+    margin: 15px auto;
+}
+.textWrapRight{
+    margin: 10px;
+}
+.photoDC:hover{
+    transform: scale(1.05);
+    transition: .2s ease-out;
+}
+
+
+/* ____________________________________________ */
+/*                                              */
+/*       Mise en place de la page CONTACT       */
+/* ____________________________________________ */
+/*                                              */
+/*                  Formulaire                  */
+/* ____________________________________________ */
+
+textarea{
+    width: 100%;
+    border: 2px solid rgba(163, 203, 77, .9);;
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.center_form_button{
+    text-align: center;
+    margin-top: 10px;
+}
+input, select{
+    margin: 0 0 5px 0;
+}
+.form_button{
+    padding: 12px 50px;
+    margin: 5px 5px;
+    max-width: 200px;
+    background-color: rgba(163, 203, 77, .9);
+    border: rgba(163, 203, 77, .9);
+    border-radius: 5px;
+    color: rgb(37, 37, 37);
+    font-size: 1.2em;
+}
+.form_button:hover{
+    background-color: rgb(37, 37, 37);
+    border: rgb(37, 37, 37);
+    border-radius: 5px;
+    color: rgba(163, 203, 77, .9);
+    transition: .1s ease-in;
+    transform: scale(1.05);
+}
+/* Les différents "paragraphes" page contact */
+.mail_contact_p{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+    margin: 50px auto;
+}
+.mail_contact{
+    color: rgb(165, 203, 77);
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 25px auto;
+}
+/* Bouton parcourir page contact */
+.retour_ligne{ 
+    display: block;
+}
+
+
+/* ____________________________________________ */
+/*                                              */
+/*       Mise en place de la page SERVICE       */
+/* ____________________________________________ */
+
+.icon_service{
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+/* ____________________________________________ */
+/*                                              */
+/*       Mise en place de la page TRAVAUX       */
+/* ____________________________________________ */
+
+.a_travaux{
+    text-decoration: none;
+    color: #fff;
+}
+.a_travaux:hover{
+    color: rgb(37, 39, 34);
+}
+.filrouge{
+    width: 50%;
+}
+
+
+/* ____________________________________________ */
+/*                                              */
+/*       Mise en place de la page GALERIE       */
+/* ____________________________________________ */
+
+.img_galerie{
+    width: 100%;
+}
+
+/* ____________________________________________ */
+/*                                              */
+/*            Mise en place du FOOTER           */
+/* ____________________________________________ */
+footer{
+    background-color: rgb(165, 203, 77);
+    text-align: center;
+    padding: 50px;
+    color: #333;
+}
+
+
+/* ____________________________________________ */
+/*                                              */
+/*          Mise en place des "cartes"          */
+/* ____________________________________________ */
+.figure{
+    background-color: rgb(40, 43, 37);
+    padding: 15px;
+    margin: 5px 5px;
+    text-align: center;
+    border: 1px solid rgb(100, 122, 47);
+}
+.figure:hover{
+    transform: scale(1.05);
+    cursor: default;
+    transition: .2s;
+    background-color: rgb(100, 122, 47);
+    border: 1px solid rgb(37, 39, 34);
+}
+
+
+
+/* @media screen and (max-width:780px){
+    .gallery .figure{
+        width: 48%;
+    }
+    .flexing{
+        display: flex;
+    }
+    .gallery{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .textWrapRight{
+        float: none!important;
+    }
+    .photoDC{
+        width: 80%;
+        margin: 0 auto;
+    }
+} */
